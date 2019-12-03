@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set active_page = "about" %}
+{% block content %}
+    <h3 style="text-align: center">ABOUT BLODGIC</h3>
+
+    <p style="text-align: center"> BLodgic uses Machine Learning to Detect DGAs </p>
+ 
+<p>The cat and mouse game in cyber security of blocking attackers based on a domain or IP address is archaic. In the ever-growing realm of bots and command and control architecture, domain assignments have shifted from fast flux, a node shuffling method of DNS and compromised hosts, to a method called Domain Generation Algorithms (DGA). Block and tackle defense on DGAs is costly but with a proper implementation, Machine Learning detection can be fruitful. </p>
+ 
+<p>The DGA technique produces a list of constantly changing domains from a randomized seed of code. This code and seed create a rendezvous point between a command and control server and the infected client. If a domain is blocked, resiliency is built-in and a new domain can be used bring back the bi-directional traffic between the host and the C2 server. </p>
+ 
+<p>The DGA domain is made of random numbers, letters and characters (ex: qx44utti3xbiz74hw2v5owww[.]net). In addition to a resilient communication channel, it is also a masquerade and evade tactic. Because the domain does not look like a word or group of words, and its usually newly registered, it can evade proxy categorization. Your typical email clicker may also be curious to the site behind this strange gathering of characters. With this lure and evasion, the DGA trap is set and the attack technique has spun another web of deception. </p>
+ 
+<p>To defend against this attack, cyber security defenders or blue teams thoroughly investigate and diagnosis nefarious network activity by blocking connections to the known IP address or domain of the C2 server. Even though the blue team blocked the traffic, if the malware was not properly removed, the same nefarious network connection originating from malware installation continues because it has spun up a new domain and the connection link continues. </p>
+ 
+<p>This DGA scheme has been around since 2008 with Kraken. DGAs found huge success later in 2009 with the Conficker worm. Ransomware has since picked up the DGA technique and, well, ransomware is continuing to do its thing. </p>
+ 
+<p>So why not fight fire with fire? Or in the case of defenders, use an algorithm to defend against another algorithm. With the availability of labeled data, open source intel, and feature engineering, the DGA detection use case has a lower barrier to entry for an ML application. Rather than put together blacklists of known DGAs, a ML algorithm can predict and classify a DGA domain to aid in thwarting the attack. </p>
+
+<p style="text-align: center"> THE DGA SEARCH SERVICE</p>
+
+<p> Feel free to use the Home page to lookup and predict DGA's individually. Search a domain that you may feel is suspicious and the machine learning algorithms will run on the back-end to predict if your domain search is likely to be a DGA and if so, which malware family it may belong too. </p>
+
+<p>If you'd like to use the API service for multiple lookups please send an email via the Contact page </p>
+
+<p> Happy Hunting ! </p>
+
+{% endblock content %}
