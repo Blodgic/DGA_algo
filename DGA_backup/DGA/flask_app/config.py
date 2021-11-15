@@ -1,7 +1,7 @@
 import os
 
 DB_USER = 'blodgic'
-DB_PASSWORD = 'f283^fhQ90fe'
+DB_PASSWORD = 'XXXXXXX'
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
@@ -10,5 +10,5 @@ class Config(object):
     MAIL_USE_TLS = True
     MAIL_PORT = 587
     MAIL_USERNAME = 'contact@blodgic.com'
-    MAIL_PASSWORD = 'nlhxlkhhdmpwdchu'
+    MAIL_PASSWORD = 'XXXXXXX'
     MAIL_DEFAULT_SENDER = 'contact@blodgic.com'
